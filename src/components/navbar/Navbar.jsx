@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <header className="header">
-        <a href="/" className='elite'>ELITE</a>
+        <h1 className='elite'>ELITE</h1>
             <nav className="navbar">
-                <a href="/">Home</a>
+                <a href="/">News</a>
                 <Link to='/about'>About</Link>
                 <a href="/">Categories</a>
-                <a href="/">Contact Us</a>
+                <Link to='/contact'>Contact Us</Link>
             </nav>
     </header>
   )
