@@ -1,11 +1,19 @@
 import React from 'react'
 import './homepage.css'
-import Navbar from '../navbar/navbar'
+import Navbar from '../navbar/Navbar'
 
 const Homepage = () => {
   return (
     <>
-        <Navbar/>
+    <body style={{
+      background: `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(${'src/assets/background.png'})`,
+      backgroundSize: `cover`,
+      backgroundPosition: `center`,
+      backgroundRepeat: `no-repeat`,
+      position: `relative`
+    }}
+    >
+    <Navbar/>
         <div className="welcome-section">
         <div className="collab">
             <img src="src/assets/logo/elite_logo.png" id='elite-logo'/>
@@ -14,6 +22,8 @@ const Homepage = () => {
         <h1>WELCOME TO ELITE</h1>
         <p>Innovate. Iterate. Dominate</p>
     </div>
+    </body>
+
     </>
   )
 }

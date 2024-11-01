@@ -22,12 +22,6 @@ body {
     flex-direction: column;
 }
 
-.contact h2 {
-    font-size: 36px;
-    font-weight: 500;
-    color: #fff;
-}
-
 .container {
     width: 100%;
     display: flex;

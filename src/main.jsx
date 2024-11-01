@@ -1,16 +1,21 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Homepage from './components/homepage/homepage.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
+import News from './components/News/News.jsx'
+import Categories from './components/Categories/Categories.jsx'
+import Homepage from './components/homepage/homepage.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Homepage/>
+  },
+  {
+    path: '/news',
+    element: <News/>
   },
   {
     path: '/about',
@@ -19,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact/>
+  },
+  {
+    path: '/categories',
+    element: <Categories/>
   }
 ])
 

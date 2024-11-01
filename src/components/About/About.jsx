@@ -2,11 +2,21 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faSquareXTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import './about.css'
+import Navbar from '../navbar/Navbar'
 
 const About = () => {
   return (
     <>
-      <div className="section">
+    <body 
+    style={{
+      background: `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(${'src/assets/about_background.png'})`,
+      backgroundSize: `cover`,
+      backgroundPosition: `center`,
+      backgroundRepeat: `no-repeat`,
+      position: `relative`
+    }}>
+      <Navbar/>
+    <div className="section">
         <div className="container">
           <div className="content-section">
             <div className="title">
@@ -30,6 +40,7 @@ const About = () => {
           </div>
         </div>
       </div>
+    </body>
     </>
     
   )
