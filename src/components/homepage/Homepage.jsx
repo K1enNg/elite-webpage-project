@@ -10,7 +10,7 @@ const Homepage = () => {
       backgroundSize: `cover`,
       backgroundPosition: `center`,
       backgroundRepeat: `no-repeat`,
-      position: `relative`
+      position: `relative`,
     }}
     >
     <Navbar/>
@@ -23,7 +23,6 @@ const Homepage = () => {
         <p>Innovate. Iterate. Dominate</p>
     </div>
     </body>
-
     </>
   )
 }
